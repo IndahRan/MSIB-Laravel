@@ -12,8 +12,9 @@ class UserController extends Controller
    {
     // $payload['user'] = "sintak";
     // $payload['kategori'] = "jurnal";
+    $user = User::all();
 
-    return view('index');
+    return view('index', compact('user'));
 
     // menampilkan 1 data
     // return view('index', $payload);
